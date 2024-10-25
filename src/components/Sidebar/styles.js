@@ -14,10 +14,21 @@ export default makeStyles((theme) => ({
     textDecoration: 'none',
   },
   genreImages: {
-    filter: theme.palette.mode === 'dark' ? 'invert(1)' : 'dark',
+    filter: theme.palette.mode === 'dark' ? 'invert(1)' : 'none',
   },
   bigText: {
-    color: 'primary',
+    color: theme.palette.primary.main,
     fontSize: 30,
+  },
+  cinevaultLogo: {
+    fontFamily: 'Arial, sans-serif',
+    fontWeight: 'bold',
+    fontSize: '36px',
+    color: '#222222', // Cinematic red
+    textTransform: 'uppercase',
+    letterSpacing: '2px',
+    display: 'inline-flex',
+    alignItems: 'center',
+    cursor: 'pointer',
   },
 }));
