@@ -21,5 +21,6 @@ module.exports = {
     'react',
   ],
   rules: {
+    'import/no-cycle': 'off',
   },
 };
