@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable import/no-cycle */
 import React from 'react';
 import { Grid } from '@mui/material';
 
@@ -11,6 +13,7 @@ function MovieList({ movies, numberOfMovies, excludeFirst }) {
   return (
     <Grid container className={classes.moviesContainer}>
       {movies.results.slice(startFrom, numberOfMovies).map((movie, i) => (
+        // eslint-disable-next-line react/no-array-index-key
         <Movie key={i} movie={movie} i={i} />
       ))}
     </Grid>

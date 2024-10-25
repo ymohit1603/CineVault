@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable max-len */
 import React, { useState, useEffect } from 'react';
 import {
   Modal, Typography, Button, ButtonGroup, Grid, Box, CircularProgress, Rating,
@@ -125,6 +127,7 @@ function MovieInfo() {
         <Grid item container spacing={2}>
           {data && data?.credits?.cast?.map((character, i) => (
             character.profile_path && (
+            // eslint-disable-next-line react/no-array-index-key
             <Grid key={i} item xs={4} md={2} component={Link} to={`/actors/${character.id}`} style={{ textDecoration: 'none' }}>
               <img
                 className={classes.castImage}

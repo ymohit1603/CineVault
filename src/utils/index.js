@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import axios from 'axios';
 
 export const moviesApi = axios.create({
@@ -22,6 +23,7 @@ export const fetchToken = async () => {
   }
 };
 
+// eslint-disable-next-line consistent-return
 export const createSessionId = async () => {
   const token = localStorage.getItem('request_token');
 

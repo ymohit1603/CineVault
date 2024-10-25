@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable max-len */
 import React, { useEffect } from 'react';
 import {
   Divider, List, ListItem, ListItemText, ListSubheader, ListItemIcon, Box, CircularProgress,
@@ -20,6 +22,7 @@ const categories = [
   { label: 'Upcoming', value: 'upcoming' },
 ];
 
+// eslint-disable-next-line react/prop-types
 function Sidebar({ setMobileOpen }) {
   const theme = useTheme();
   const classes = useStyles();

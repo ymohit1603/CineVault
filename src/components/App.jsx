@@ -3,7 +3,7 @@ import { CssBaseline } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
 
 import useStyles from './styles';
-// import useAlan from './Alan';
+import useAlan from './Alan';
 
 import {
   Movies, Actors, MovieInfo, Navbar, Profile,
@@ -13,7 +13,7 @@ function App() {
   const classes = useStyles();
   const alanBtnContainer = useRef();
 
-  // useAlan();
+  useAlan();
 
   return (
     <div className={classes.root}>
